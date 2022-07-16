@@ -15,6 +15,11 @@ app features includes;
 
 # Screenshots
 
+![simulator_screenshot_85CF1E73-0F90-45A5-B968-D21157AF994B](https://user-images.githubusercontent.com/79908524/179349832-d9633121-f736-4857-bbb0-9639bab0658a.png)
+![simulator_screenshot_0AE491A9-0477-42B5-B24D-DBC9209319C0](https://user-images.githubusercontent.com/79908524/179349855-630766ae-849d-4a83-aedb-ae2327937213.png)
+![simulator_screenshot_B9E71E0A-6C2E-4D9D-9790-88428E72E160](https://user-images.githubusercontent.com/79908524/179349886-dcc0d0d0-9cfa-4379-8fe5-41044180e7e2.png)
+
+
 
 # Tech Used
  ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
