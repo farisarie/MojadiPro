@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Forgot Page View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="forgott" id="Y6W-OH-hqX" customClass="ForgotPageViewController" customModule="MojadiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forgot" translatesAutoresizingMaskIntoConstraints="NO" id="i4P-l0-q9D">
+                                <rect key="frame" x="59" y="225" width="296" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="F6q-DZ-hn5"/>
+                                    <constraint firstAttribute="width" constant="296" id="VIs-7a-r4f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pR-sT-gWb">
+                                <rect key="frame" x="119.5" y="473" width="175.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your registered email below to receive reset instruction password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQP-9j-YC6">
+                                <rect key="frame" x="59" y="521" width="296" height="32"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HwI-3p-yXy" customClass="DesignableTextField" customModule="MojadiApp" customModuleProvider="target">
+                                <rect key="frame" x="43" y="590" width="328" height="34"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="H1q-vz-yds"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="mail"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="imageColor">
+                                        <color key="value" red="0.63137254899999995" green="0.63137254899999995" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9d-Pi-R92" customClass="RoundedButton" customModule="MojadiApp" customModuleProvider="target">
+                                <rect key="frame" x="43" y="650" width="328" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="7az-eG-5iz"/>
+                                    <constraint firstAttribute="height" constant="34" id="mpA-ig-hwe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i4P-l0-q9D" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="016-WN-wdg"/>
+                            <constraint firstItem="i4P-l0-q9D" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="3:4" id="1zG-W2-h6K"/>
+                            <constraint firstItem="3pR-sT-gWb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2qw-ME-DjY"/>
+                            <constraint firstItem="lQP-9j-YC6" firstAttribute="top" secondItem="3pR-sT-gWb" secondAttribute="bottom" constant="26" id="6NU-JE-qY3"/>
+                            <constraint firstItem="HwI-3p-yXy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Ic2-if-9z5"/>
+                            <constraint firstItem="lQP-9j-YC6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="59" id="PU9-xK-Fpo"/>
+                            <constraint firstItem="h9d-Pi-R92" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="TTC-x9-yPq"/>
+                            <constraint firstItem="HwI-3p-yXy" firstAttribute="top" secondItem="lQP-9j-YC6" secondAttribute="bottom" constant="37" id="Zg6-BC-s9d"/>
+                            <constraint firstItem="3pR-sT-gWb" firstAttribute="top" secondItem="i4P-l0-q9D" secondAttribute="bottom" constant="26" id="bg9-LM-dfM"/>
+                            <constraint firstItem="h9d-Pi-R92" firstAttribute="top" secondItem="HwI-3p-yXy" secondAttribute="bottom" constant="26" id="cGf-5J-XFE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lQP-9j-YC6" secondAttribute="trailing" constant="59" id="cmk-bK-Yrr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="HwI-3p-yXy" id="Vjd-yd-4kY"/>
+                        <outlet property="resetBtn" destination="h9d-Pi-R92" id="IN2-9Z-4yo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="58"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="HwI-3p-yXy">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="forgot" width="296.5" height="222.5"/>
+        <image name="mail" width="20" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

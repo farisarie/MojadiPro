@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="rootBoarding" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="MojadiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cQV-Gi-Bus">
+                                <rect key="frame" x="0.0" y="94" width="390" height="472"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="472" id="Fq6-cj-36q"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="VAU-4z-uLG">
+                                    <size key="itemSize" width="390" height="457"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="on_cell" id="lr2-cG-SBn" customClass="OnboardingCollectionViewCell" customModule="MojadiApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="7.666666666666667" width="390" height="457"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1wH-0X-Kcl">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="457"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nh-ny-hD7">
+                                                    <rect key="frame" x="40" y="362.33333333333331" width="310" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="page3" translatesAutoresizingMaskIntoConstraints="NO" id="UQ2-nc-gMc">
+                                                    <rect key="frame" x="27.666666666666657" y="46.333333333333343" width="335" height="275"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="275" id="C3p-BC-aLg"/>
+                                                        <constraint firstAttribute="width" constant="335" id="cws-wx-d20"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYy-db-N72">
+                                                    <rect key="frame" x="64" y="394.33333333333331" width="262" height="62.666666666666686"/>
+                                                    <string key="text">Upgrade your skills and career now, 
+start exploring the many courses on offer.</string>
+                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UQ2-nc-gMc" firstAttribute="top" secondItem="1wH-0X-Kcl" secondAttribute="top" constant="46.329999999999998" id="86j-Kb-3RW"/>
+                                                <constraint firstItem="wYy-db-N72" firstAttribute="leading" secondItem="1wH-0X-Kcl" secondAttribute="leading" constant="64" id="8XM-rS-Ulj"/>
+                                                <constraint firstItem="wYy-db-N72" firstAttribute="top" secondItem="3nh-ny-hD7" secondAttribute="bottom" constant="15" id="FE4-jh-Kko"/>
+                                                <constraint firstItem="3nh-ny-hD7" firstAttribute="top" secondItem="UQ2-nc-gMc" secondAttribute="bottom" constant="41" id="LFA-PF-QJ2"/>
+                                                <constraint firstItem="3nh-ny-hD7" firstAttribute="leading" secondItem="1wH-0X-Kcl" secondAttribute="leading" constant="40" id="LQE-YV-rdv"/>
+                                                <constraint firstAttribute="trailing" secondItem="wYy-db-N72" secondAttribute="trailing" constant="64" id="Myf-o0-EUC"/>
+                                                <constraint firstItem="3nh-ny-hD7" firstAttribute="centerX" secondItem="1wH-0X-Kcl" secondAttribute="centerX" id="nFn-TP-zRo"/>
+                                                <constraint firstItem="UQ2-nc-gMc" firstAttribute="centerX" secondItem="1wH-0X-Kcl" secondAttribute="centerX" id="qLw-N9-azD"/>
+                                                <constraint firstAttribute="trailing" secondItem="3nh-ny-hD7" secondAttribute="trailing" constant="40" id="uOa-wz-H9E"/>
+                                                <constraint firstAttribute="bottom" secondItem="wYy-db-N72" secondAttribute="bottom" id="wdu-OE-Gg5"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="390" height="457"/>
+                                        <connections>
+                                            <outlet property="slideDetailLabel" destination="wYy-db-N72" id="rZ9-rF-dZW"/>
+                                            <outlet property="slideImageView" destination="UQ2-nc-gMc" id="8fl-dN-UDe"/>
+                                            <outlet property="slideTitleLabel" destination="3nh-ny-hD7" id="Fsj-m4-jtX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhd-QT-n82" customClass="PrimaryButton" customModule="MojadiApp" customModuleProvider="target">
+                                <rect key="frame" x="275" y="738" width="80" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="TUp-v6-Xol"/>
+                                    <constraint firstAttribute="height" constant="24" id="rrv-X1-HBs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next →"/>
+                                <connections>
+                                    <action selector="nextBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uf2-D0-KeD"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fsW-jV-y5t">
+                                <rect key="frame" x="138.66666666666666" y="566" width="112.66666666666666" height="25"/>
+                                <color key="pageIndicatorTintColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.08235294118" green="0.72941176470000002" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="819-YB-2su">
+                                <rect key="frame" x="35" y="731" width="52" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Skip">
+                                    <color key="baseForegroundColor" red="0.082352941176470587" green="0.72941176470588232" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="skipBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLw-n5-LWt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fsW-jV-y5t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1HN-Od-Rc8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mhd-QT-n82" secondAttribute="trailing" constant="35" id="3xH-0r-MUG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mhd-QT-n82" secondAttribute="bottom" constant="48" id="4bh-nC-OJF"/>
+                            <constraint firstItem="Mhd-QT-n82" firstAttribute="bottom" secondItem="819-YB-2su" secondAttribute="bottom" id="OHt-Ju-0gX"/>
+                            <constraint firstItem="819-YB-2su" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Xix-aZ-lnn"/>
+                            <constraint firstItem="fsW-jV-y5t" firstAttribute="top" secondItem="cQV-Gi-Bus" secondAttribute="bottom" id="aaX-5t-9Gq"/>
+                            <constraint firstItem="cQV-Gi-Bus" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="eoO-89-aZx"/>
+                            <constraint firstItem="cQV-Gi-Bus" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lQa-Xa-VRS"/>
+                            <constraint firstItem="cQV-Gi-Bus" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oqb-TL-YaY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="cQV-Gi-Bus" id="xRt-09-07L"/>
+                        <outlet property="nextBtn" destination="Mhd-QT-n82" id="BwC-Tq-xkO"/>
+                        <outlet property="pageControl" destination="fsW-jV-y5t" id="J2Y-JM-C86"/>
+                        <outlet property="skipBtn" destination="819-YB-2su" id="7RJ-h3-n5U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="83.175355450236964"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="page3" width="275" height="314"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

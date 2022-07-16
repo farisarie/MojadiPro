@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>117529324180-nn9ujv05ht7bg1h8qm1s58tossbupa5t.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.117529324180-nn9ujv05ht7bg1h8qm1s58tossbupa5t</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>117529324180-biqgumsoufes7p5lgn978urk31rgb7p2.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD0Ek2P6tI7AWzSq7YvSdxfeVhiC7iaIMk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>117529324180</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.farisarie.MojadiApp</string>
+	<key>PROJECT_ID</key>
+	<string>mojadipro</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mojadipro.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:117529324180:ios:d7e02d4c81d9d587876281</string>
+</dict>
+</plist>

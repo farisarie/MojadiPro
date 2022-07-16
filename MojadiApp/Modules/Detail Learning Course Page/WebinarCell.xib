@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WebinarCell" customModule="MojadiApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="520" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="520" height="132"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date" translatesAutoresizingMaskIntoConstraints="NO" id="EII-Kg-cse">
+                        <rect key="frame" x="12" y="56.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="eKZ-tN-cCM"/>
+                            <constraint firstAttribute="height" constant="24" id="gKE-i4-TY2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-Sp-7kf">
+                        <rect key="frame" x="12" y="12" width="30" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoJ-RU-P54">
+                        <rect key="frame" x="12" y="34.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjN-KA-n11">
+                        <rect key="frame" x="46" y="85" width="41.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playlist" translatesAutoresizingMaskIntoConstraints="NO" id="c8l-JX-g73">
+                        <rect key="frame" x="12" y="85.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Oaa-xT-d4R"/>
+                            <constraint firstAttribute="width" constant="24" id="rKZ-ax-09Q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joI-oe-O6j">
+                        <rect key="frame" x="46" y="58.5" width="41.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="joI-oe-O6j" firstAttribute="leading" secondItem="EII-Kg-cse" secondAttribute="trailing" constant="10" id="3Oi-X7-lBz"/>
+                <constraint firstItem="YKg-Sp-7kf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="3Pi-0k-P1c"/>
+                <constraint firstItem="EII-Kg-cse" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="CDV-re-mzp"/>
+                <constraint firstItem="YKg-Sp-7kf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="DOU-4C-NWX"/>
+                <constraint firstAttribute="bottom" secondItem="QjN-KA-n11" secondAttribute="bottom" constant="26" id="GN7-XN-IBK"/>
+                <constraint firstItem="QjN-KA-n11" firstAttribute="centerY" secondItem="c8l-JX-g73" secondAttribute="centerY" constant="-2" id="N0Y-YJ-5Ik"/>
+                <constraint firstItem="c8l-JX-g73" firstAttribute="top" secondItem="EII-Kg-cse" secondAttribute="bottom" constant="5" id="QYi-ue-GfC"/>
+                <constraint firstItem="c8l-JX-g73" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="QoE-wG-Jjo"/>
+                <constraint firstItem="EII-Kg-cse" firstAttribute="top" secondItem="PoJ-RU-P54" secondAttribute="bottom" constant="5" id="e8F-H0-XmK"/>
+                <constraint firstItem="joI-oe-O6j" firstAttribute="centerY" secondItem="EII-Kg-cse" secondAttribute="centerY" id="gmP-Mu-rnD"/>
+                <constraint firstAttribute="bottom" secondItem="c8l-JX-g73" secondAttribute="bottom" constant="22.5" id="o5E-HE-gJk"/>
+                <constraint firstItem="PoJ-RU-P54" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="qTN-Xg-376"/>
+                <constraint firstItem="QjN-KA-n11" firstAttribute="leading" secondItem="c8l-JX-g73" secondAttribute="trailing" constant="10" id="xae-Dj-43J"/>
+                <constraint firstItem="PoJ-RU-P54" firstAttribute="top" secondItem="YKg-Sp-7kf" secondAttribute="bottom" constant="6" id="yta-K8-IFv"/>
+            </constraints>
+            <size key="customSize" width="520" height="132"/>
+            <connections>
+                <outlet property="clock" destination="joI-oe-O6j" id="ZSc-xK-FsJ"/>
+                <outlet property="date" destination="QjN-KA-n11" id="Jur-DS-reL"/>
+                <outlet property="overviewLabel" destination="PoJ-RU-P54" id="IDs-Kn-SvO"/>
+                <outlet property="webinarLabel" destination="YKg-Sp-7kf" id="2dn-Vh-k3g"/>
+            </connections>
+            <point key="canvasLocation" x="472.46376811594206" y="157.36607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="date" width="24" height="24"/>
+        <image name="playlist" width="28" height="30"/>
+    </resources>
+</document>
