@@ -7,7 +7,7 @@
 MojadiPro is an education-based startup.  This application has features such as videos and there is also a quiz as a learning medium for users. For the color MojadiPro uses dark colors because the target market of this application is more professional than it’s website which targets high school student.
 
 # Features
-The body of the lesson includes;
+app features includes;
 - video player
 - sample code
 - sign-in Google. 
